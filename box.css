@@ -1,0 +1,118 @@
+/*最外层布局*/
+
+.box {
+    width:96%;
+    padding: 0 2%;
+    min-width: 1005px;
+    position: relative;
+    overflow: hidden;
+    
+}
+nav#top {
+    height: 142px;
+}
+section#newsong {
+    height: 735px;
+    background: url(image/bg_index_new.jpg) center;
+}
+section#recommend {
+    height: 600px;
+}
+section#rank {
+    background: url(image/bg_index_top2.jpg) center;
+    height: 830px;
+}
+section#playist {
+    height: 758px;
+}
+section#mvlist {
+    height: 860px;
+    background: #e6e6e6;
+}
+footer {
+    background-color: #333;
+    height: 495px;
+    color: #999;
+    /*  yiyyiyiyiyiyiyyiyiyiy  */
+}
+
+/*main布局*/
+
+div.box-main {
+    min-width: 985px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
+}
+
+/*aside层布局*/
+
+div.box-btn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+}
+div.box-btn div,
+div.box-btn div em {
+    position: absolute;
+}
+div.box-btn-left,
+div.box-btn-right {
+    width: 5%;
+    height: 100%;
+    top: 0px;
+    z-index: 4;
+}
+div.box-btn-left {
+    left: 0px;
+}
+div.box-btn-right {
+    right: 0px;
+}
+div.box-btn-left-btn,
+div.box-btn-right-btn {
+    width: 72px;
+    height: 108px;
+    background: rgba(153, 153, 153, .4);
+    top: 50%;
+    z-index: 5;
+    margin-top: -54px;
+    transition-property: background, width, left, right;
+    transition-duration: 0.5s;
+}
+div.box-btn-left-btn {
+    left: -72px;
+}
+div.box-btn-right-btn {
+    right: -72px;
+}
+div.box-btn-left-btn.current {
+    left: 0;
+}
+div.box-btn-right-btn.current {
+    right: 0;
+}
+div.box-btn div.hover {
+    width: 80px;
+    background: #31c27c;
+}
+div.box-btn em {
+    width: 11px;
+    height: 18px;
+    top: 50%;
+    margin-top: -9px;
+}
+div.box-btn em.box-btn-left-btn-icon {
+    left: 30px;
+    background-position: -180px 0;
+}
+div.box-btn em.box-btn-right-btn-icon {
+    background-position: -160px 0;
+    right: 30px;
+}
