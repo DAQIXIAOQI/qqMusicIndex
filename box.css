@@ -9,7 +9,7 @@
     
 }
 nav#top {
-    height: 142px;
+  height: 143px;
 }
 section#newsong {
     height: 735px;
@@ -23,10 +23,10 @@ section#rank {
     height: 830px;
 }
 section#playist {
-    height: 758px;
+    height:758px; 
 }
 section#mvlist {
-    height: 860px;
+    height: 860px; 
     background: #e6e6e6;
 }
 footer {

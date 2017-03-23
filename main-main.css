@@ -70,7 +70,7 @@ div#top-user {
     height: 38px;
     margin: 26px 0;
 }
-div#top-user a {
+div#top-main div#top-user a {
     line-height: 38px;
     height: 38px;
     padding: 0 11px;
@@ -78,7 +78,7 @@ div#top-user a {
     font-size: 13px;
     border-radius: 2px;
 }
-div#top-user a#top-user-login {
+div#top-main div#top-user a#top-user-login {
     font-size: 16px;
 }
 div#top-user a#top-user-rich {
@@ -145,7 +145,11 @@ div#newsong-main ul.nav-classify {
     width: 510px;
 }
 ul#newsong-main-click-ul {
-    width: 4800px;
+    width: 400%;
+}
+ul#newsong-main-click-ul li {
+    width: 6.25%;
+    height: auto;
 }
 
 /*recommend-main*/
@@ -156,7 +160,7 @@ div#recommend-header-text {
 div#recommend-autoplay {
     position: relative;
     margin: 50px auto 0 auto;
-    width: 1200px;
+    width: 100%;
     height: 325px;
     margin-bottom: 25px;
     overflow: hidden;
@@ -184,32 +188,27 @@ ul#recommend-autoplay-ul li img {
 ul#recommend-autoplay-ul li.p1 {
     transform-origin: 0% 50%;
     transform: scale(0.81);
-    left: -607px;
 }
 ul#recommend-autoplay-ul li.p2 {
     transform: scale(0.81);
     transform-origin: 0% 50%;
     opacity: .7;
     filter: alpha(opacity: 70);
-    left: 0px;
 }
 ul#recommend-autoplay-ul li.p3 {
     transform-origin: 50% 50%;
-    left: 225px;
     z-index: 4;
     opacity: 1;
     filter: alpha(opacity: 100);
 }
 ul#recommend-autoplay-ul li.p4 {
     transform-origin: 0% 50%;
-    left: 600px;
     transform: scale(0.81);
     opacity: .7;
     filter: alpha(opacity: 70);
 }
 ul#recommend-autoplay-ul li.p5 {
     transform-origin: 0% 50%;
-    left: 1200px;
     transform: scale(0.81);
 }
 section#recommend div.aside-btn-left-btn,
@@ -226,24 +225,24 @@ div#rank-main div.main-nav {
     margin-top: 0px;
 }
 div#rank-main-box {
-    width: 1200px;
-    height: 567px;
+    width: 100%;
+    height: auto;
     margin: 50px auto 0 auto;
     position: relative;
 }
 ul#rank-main-ul {
-    width: 1200px;
+    width: 100%;
     height: 567px;
 }
 li.rank-main-ul-li {
-    width: 300px;
+    width: 25%;
     height: 567px;
     float: left;
     position: relative;
 }
 li.rank-main-ul-li div.img-box {
     background-image: url(image/bg_index_top.jpg);
-    width: 300px;
+    width: 100%;
     height: 567px;
     position: absolute;
     top: 0px;
@@ -349,7 +348,10 @@ div#playist-main-click {
     margin-top: 50px;
 }
 ul#playist-main-click-ul {
-    width: 3600px;
+    width: 300%;
+}
+ul#playist-main-click-ul li {
+    width: 8.33%;
 }
 div#playist-main-click ul li h4 {
     padding-top: 57px;
@@ -379,30 +381,30 @@ div#mvlist-main a.main-all em.current {
     background-position: -120px -60px;
 }
 div#mvlist-main-click {
-    width: 1200px;
+    width: 100%;
     margin: 30px auto 0 auto;
     position: relative;
 }
 ul#mvlist-main-click-ul {
-    width: 1200px;
+    width: 100%;
     position: relative;
 }
 ul#mvlist-main-click-ul li {
-    width: 300px;
+    width: 25%;
     height: 304px;
     position: relative;
     float: left;
 }
 ul#mvlist-main-click-ul li img {
-    width: 300px;
+    width: 100%;
     height: auto;
 }
 div.mv-listbox-slide-ul-libox {
-    width: 300px;
-    height: 304px;
+    width: 100%;
+    height: auto;
 }
 div#mvlist-main div.img-btn-box {
-    height: 170px;
+    height: auto;
 }
 div#mvlist-main-click li h3 {
     height: 24px;
@@ -434,17 +436,22 @@ div.mv-list-main-playnum em {
 
 div#footer-download {
     width: 35%;
+    min-width: 400px;
     margin-bottom: 100px;
     float: left;
 }
 div#footer-production {
     width: 27%;
+    min-width: 310px;
     float: left;
     margin-bottom: 100px;
 }
 div#footer-link {
-    width: 25%;
-    float: right;
+    max-width: 300px;
+    min-width: 200px;
+    width: 25S%;
+    position: absolute;
+    right: 0px;
     margin-bottom: 100px;
 }
 footer p.footer-header {

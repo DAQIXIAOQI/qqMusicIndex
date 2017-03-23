@@ -28,7 +28,6 @@
   a.main-all em {
       background-image: url(image/icon_sprite.png);
   }
-
   /*main-header*/
   
   div.main-header {
@@ -57,7 +56,6 @@
   div.main-header em.header-line-right {
       right: 0px;
   }
-
   /*main-nav*/
   
   div.main-nav {
@@ -109,7 +107,6 @@
   a.main-all em.current {
       background-position: -120px -60px;
   }
-
   /*main-slide*/
   
   div.main-slide {
@@ -138,13 +135,13 @@
   div#newsong-main div.main-slide a em.current {
       background-color: rgba(255, 255, 255, 1);
   }
-
   /*main-boxslide*/
   
   div.main-boxslide {
       position: relative;
       overflow: hidden;
       /*取消浮动*/
+      width: 100%;
       max-width: 1200px;
       min-width: 985px;
       margin: 0 auto 33px auto;
@@ -187,12 +184,16 @@
       position: relative;
       overflow: hidden;
       background: rgb(0, 0, 0);
-      width: 300px;
-      height: 300px;
+      width: 100%;
+      height: 100%;
   }
   div.img-box {
       opacity: 1;
       transition-duration: 0.8s;
+  }
+  div.img-box img {
+      max-width: 100%;
+      height: auto;
   }
   div.img-box.hover {
       opacity: 0.8;
