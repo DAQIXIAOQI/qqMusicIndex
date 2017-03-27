@@ -1,4 +1,9 @@
 window.onload = function () {
+    var top = document.getElementById("top");
+    var topSearch = document.getElementById("top-search");
+    var topInput = document.getElementsByName("search")[0];
+    var topSearchBtn = document.getElementById("top-search-btn");
+
     var newsong = document.getElementById("newsong");
     var newsongClick = document.getElementById("newsong-main-click");
     var newsongClickUl = document.getElementById("newsong-main-click-ul");
@@ -37,8 +42,23 @@ window.onload = function () {
             updateMoveWidth();
             updateAutoplay();
         }
+        inputChange(topInput,wid);
     }
-
+    inputChange(topInput,wid);
+    function inputChange(obj,wid) {    
+        if (wid < 1250) {
+            obj.className = "min" ;
+        }
+        else {
+            obj.className = "" ;
+        }
+    }
+    topSearch.onmouseover = function(){
+        topInput.className = "" ;
+    }
+    topSearch.onmouseout = function(){
+       inputChange(topInput,wid);
+    }
     //左移右移效果
     var oboxSlideUl = getClassName("main-boxslide-ul", document);
     var oasideLeftBtn = getClassName("box-btn-left-btn", document);

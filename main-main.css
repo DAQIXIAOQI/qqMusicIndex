@@ -14,6 +14,7 @@ ul#top-bignav {
     position: absolute;
     left: 225px;
     top: 0px;
+    z-index: 2;
 }
 ul#top-bignav li {
     height: 90px;
@@ -26,10 +27,11 @@ ul#top-bignav li a {
     padding: 0 20px;
 }
 div#top-search {
+    z-index: 3;
+    background-color: white;
     position: absolute;
     top: 0px;
     right: 294px;
-    width: 250px;
     height: 36px;
     margin: 27px 0;
     border: 1px solid #c9c9c9;
@@ -37,16 +39,25 @@ div#top-search {
     overflow: hidden;
 }
 div#top-search input {
-    padding-left: 15px;
-    width: 202px;
+    visibility: visible;
+    margin-left: 15px;
+    width:202px;
     height: 36px;
-    border: none;
+    border:none;
+    transition-duration: 1s;
+    transition-property: width ;
+}
+div#top-search input.min {
+    visibility:hidden;
+    margin-left: 0px;
+    width:0px;
 }
 div#top-search div#top-search-btn {
-    width: 34px;
+    float: right;
+    width: 36px;
     height: 38px;
-    position: absolute;
-    top: 0;
+    position: relative;
+    top:0;
     right: 0;
     background-color: white;
     background-position: left -40px;
